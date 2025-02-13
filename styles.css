@@ -1,0 +1,110 @@
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #f8d7da;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'Great Vibes', cursive;
+    color: #e63946;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.sub-heading {
+    font-size: 1.2em;
+    color: #e63946;
+}
+
+.countdown {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+.countdown #timer {
+    font-size: 2em;
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+.gallery {
+    margin-bottom: 50px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+.letter {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Surprise Button Styling */
+.surprise-button {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.surprise-btn {
+    background: linear-gradient(135deg, #ff6f61, #e63946); /* Gradient background */
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px; /* Rounded corners */
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.surprise-btn:hover {
+    background: linear-gradient(135deg, #e63946, #ff6f61); /* Reversed gradient on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5); /* Text glow effect */
+}
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #ffebf2;
+            margin: 0;
+        }
+
+        .question-container {
+            text-align: center;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            color: #e63946;
+            font-size: 2.5em;
+        }
+
+        .button-container {
+            margin-top: 30px;
+        }
+
+        .question-btn {
+            font-size: 1.2em;
+            background: linear-gradient(135deg, #ff6f61, #e63946);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            margin: 10px;
+        }
+
+        .question-btn:hover {
+            background: linear-gradient(135deg, #e63946, #ff6f61);
+            transform: scale(1.05);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="question-container">
+        <h1>Do you want to be my Valentine? 💖</h1>
+        <div class="button-container">
+            <button class="question-btn" onclick="window.location.href='index.html';">Yes</button>
+            <button class="question-btn" id="noButton">No</button>
+        </div>
+    </div>
+
+    <script>
+        // Randomly reposition "No" button when clicked
+        document.getElementById("noButton").addEventListener("click", function() {
+            var button = document.getElementById("noButton");
+            var x = Math.random() * (window.innerWidth - button.offsetWidth);
+            var y = Math.random() * (window.innerHeight - button.offsetHeight);
+
+            button.style.position = "absolute";
+            button.style.left = `${x}px`;
+            button.style.top = `${y}px`;
+        });
+    </script>
+</body>
+</html>
